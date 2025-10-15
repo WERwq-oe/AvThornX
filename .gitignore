@@ -56,8 +56,7 @@ temp/
 .next
 out
 
-# Documentation files (keeping only README.md)
-DEPLOYMENT*.md
+# Documentation files to exclude (keeping deployment commands)
 STEP*.md
 QUICK*.md
 FINAL*.md
@@ -66,7 +65,6 @@ PROJECT*.md
 STATUS*.md
 UPGRADE*.md
 WEBSITE*.md
-*.txt
 HOW_TO_RUN.md
 SIMPLE_STEPS.txt
 
