@@ -381,7 +381,11 @@ class BioGenerator {
             isAdditional
         };
 
-        const response = await fetch('/api/generate-bio', {
+        const apiUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? '/api/generate-bio'
+            : 'YOUR_RENDER_BACKEND_URL/api/generate-bio';
+
+        const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
